@@ -286,15 +286,116 @@
 }
 
 
+/*Mini Games features buttons-icons*/
+.final-section{
+    padding: 150px 200px;
+}
+.mini-games{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+    column-gap: 40px;
+   
+    
+}
+.mini-game-button{
+    border-radius: 50px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(255, 251, 246);
+    border-style: none;
+    font-size: 20px;
+}
 
 
+.mini-game-button:hover{
+    border-radius: 50px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    padding: 15px 20px;
+    border-style: solid ;
+    background-color: rgb(255, 251, 246);
+    color: rgb(255, 23, 166);
+    border-color:rgb(255, 23, 166);
+    
 
+}
+/*Footer Part*/
+footer{
+    background-color: rgb(5, 5, 27);
+}
+.footer-title{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    color: white;
+    padding-top: 50px;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.footer-list{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    
+}
+.upper-list-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    gap:50px
+}
 
+.social-pic{
+    width: 50px;
+    display: flex;
+    margin:auto; row-gap: 10px;
+    column-gap: 10px;
+   justify-content: space-around;
+   align-items: center;
+}
+.social{
+    width: 50px;
+    padding-left: 10px;
+    cursor: pointer;
+   
+}
+.pic-list{
+    list-style: none;
+    
+}
 
-
-
+.down-list-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+.ending-list{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    list-style: none;
+}
+.copyright{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
                                             /*Media Query Section For Mobile & Tablet*/
-/*Mobile Device*/
+                                                            /*Mobile Device*/
 @media screen and (max-width: 576px) {
     *{
         margin: 0;
@@ -371,7 +472,6 @@
 
 
 
-
     /*Main Body*/
 
  
@@ -428,9 +528,57 @@
     width: 600px;
     padding-left: 50px;
 }
+/*Mini games*/
+.mini-games{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.mini-game-button{
+    display: flex;
+    gap:2px;
+    padding: 10px 20px;
+    font-size: 12px;
 }
 
-/*Tablet */
+
+.mini-game-button:hover{
+    border-radius: 50px;
+    
+    gap:5px;
+    padding: 10px 20px;
+    border-style: solid ;
+    background-color: rgb(255, 251, 246);
+    color: rgb(255, 23, 166);
+    border-color:rgb(255, 23, 166);
+    
+
+}
+
+
+/*Footer SECTION*/
+.upper-list-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+}
+.social-pic{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: -20px;
+}
+.down-list-footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+                                                    /*Tablet */
 @media screen and (min-width: 576px) and (max-width:992px) {
     *{
         margin: 0;
@@ -553,5 +701,51 @@
 .solid-image{
     width: 600px;
     padding-left: 50px;
+}
+/*Mini games*/
+
+.mini-games{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.mini-game-button{
+    display: flex;
+    gap:2px;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+
+.mini-game-button:hover{
+    border-radius: 50px;
+    
+    gap:5px;
+    padding: 10px 20px;
+    border-style: solid ;
+    background-color: rgb(255, 251, 246);
+    color: rgb(255, 23, 166);
+    border-color:rgb(255, 23, 166);
+    
+
+}
+/*Footer SECTION*/
+.upper-list-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+}
+.social-pic{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: -20px;
+}
+.down-list-footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 }
